@@ -1,0 +1,34 @@
+@charset "utf-8";
+.header,
+.footer,
+.wrap-page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.header,
+.footer {
+  height: 0;
+  background-color: #fff;
+  text-align: center;
+  z-index: 1000;
+  line-height: 0;
+}
+.footer {
+  bottom: 0;
+  border-bottom: 1px solid #fff;
+}
+.wrap-page {
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.page {
+  padding: 10px;
+}
+.page {
+  margin-bottom: 0;
+  height: 100%;
+}
+/*# sourceMappingURL=components.css.map */

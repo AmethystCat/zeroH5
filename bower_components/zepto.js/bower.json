@@ -1,0 +1,27 @@
+{
+  "name": "zepto.js",
+  "homepage": "https://github.com/cssmagic/zepto",
+  "description": "Zepto package optimized for Bower.",
+  "main": "dist/zepto.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "zepto"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "**.sh",
+    "**.gz",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "examples",
+    "script",
+    "test",
+    "vendor",
+    "CONTRIBUTING.md",
+    "make"
+  ]
+}

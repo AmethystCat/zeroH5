@@ -1,0 +1,41 @@
+@import "varlible";
+@charset "utf-8";
+
+//如果有header和footer，则可以设置wrap-page的padding
+@h: 0;
+@pagePadding: 10px;
+@pMargin: 0;
+
+.header ~.wrap-page {}
+.footer ~.wrap-page {}
+
+.header,.footer,.wrap-page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.header,.footer {
+  height: @h;
+  background-color: #fff;
+  text-align: center;
+  z-index: 1000;
+  line-height: @h;
+}
+.footer {
+  bottom: 0;
+  border-bottom: 1px solid #fff;
+}
+.wrap-page {
+  top: @h;
+  bottom: @h;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.page {
+  padding: @pagePadding;
+}
+.page {
+  margin-bottom: @pMargin;
+  height: 100%;
+}

@@ -4,8 +4,121 @@
 .hide {
   display: none;
 }
-
+.w100p{
+  width: 100%;
+  overflow: hidden;
+}
+.p10 {
+  padding: 0 10px;
+}
 //------------------page style
 .wrap-page {
-  background-color: olivedrab;
+  background-color: #b9b9b9;
+  color: #c2c2c2;
+}
+/*activity banner and team-info*/
+.section-activity {
+  @defaultWidth: 100%;
+  @logoWH: 54px;
+  @bgColor: #fff;
+  .section-banner {
+    .marginPanel();
+    border-bottom: 1px solid #ccc;
+    .banner-w {
+      img {
+        width: 100%;
+      }
+    }
+    .ac-title {
+      p {
+        position: relative;
+        padding: 10px 0;
+      }
+      .team-logo {
+        width: @logoWH;
+        height: @logoWH;
+      }
+      .team-name {
+        display: inline-block;
+        width: 63%;
+        padding-left: 10px;
+        line-height: @logoWH;
+        vertical-align: bottom;
+        font-size: 2rem;
+        color: #000;
+        .text-dot();
+      }
+      .phone-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -15px;
+        width: 30px;
+        height: 30px;
+        background: url("../img/phone-icon.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+  /*activity detail*/
+  .section-ac-detail {
+    @fc: #666;
+    .marginPanel();
+    p {
+      color: @fc;
+    }
+    .ac-time {
+      padding: 5px 0 0 0;
+      font-size: 22px;
+      color: orange;
+    }
+    .ac-location {
+      padding: 0 0 5px 0;
+      font-size: 18px;
+    }
+    .ac-des {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+  }
+  /*activity address*/
+  .section-ac-address {
+    @fc: #666;
+    .marginPanel();
+    .ac-address {
+      position: relative;
+      padding:10px 40px 10px 0;
+      //background: skyblue;
+      font-size: 22px;
+      color: @fc;
+    }
+    .local-icon {
+      position: absolute;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      margin-top: -15px;
+      background: url("../img/local-icon.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+  /*activity baoming*/
+  .section-baoming {
+    padding: 10px 15px;
+    background: @bgColor;
+    .baoming-price {
+      display: inline-block;
+      padding-top: 5px;
+      vertical-align: bottom;
+      font-size: 26px;
+      color: orange;
+      i{
+        font-style: normal;
+      }
+    }
+    .baoming {
+      float: right;
+    }
+  }
 }

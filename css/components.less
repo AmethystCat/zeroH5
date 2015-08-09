@@ -3,7 +3,7 @@
 
 //如果有header和footer，则可以设置wrap-page的padding
 @h: 0;
-@pagePadding: 10px;
+@pagePadding: 0;
 @pMargin: 0;
 
 .header ~.wrap-page {}
@@ -34,8 +34,30 @@
 }
 .page {
   padding: @pagePadding;
-}
-.page {
   margin-bottom: @pMargin;
   height: 100%;
+}
+
+//----------
+// 标题 comp
+//----------
+.h-title {
+  @colorDefault: #c2c2c2;
+  position: relative;
+  padding: 5px 0;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  color: @colorDefault;
+  border-bottom: 1px solid @colorDefault;
+}
+
+//----------
+// button-default comp
+//----------
+.btn {
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  background: orange;
 }

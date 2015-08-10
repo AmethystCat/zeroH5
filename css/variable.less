@@ -1,0 +1,40 @@
+/*
+ *----------
+ * variable
+ *----------
+*/
+@orangeColor: #fd7037;
+@hintColor: #333;
+@btnColorGreen: #24cf5f;
+@errorColor: #ff0000;
+
+
+
+
+
+/*
+ *----------
+ * mixin comp
+ *----------
+*/
+
+//Ê¡ÂÔºÅ
+.text-dot() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+//panel margin
+.marginPanel() {
+  @mb: 15px;
+  @bgColor: #fff;
+  margin-bottom: @mb;
+  background: @bgColor;
+}
+
+//process baoming padding
+.padbg(@p: 3rem,@b: #fff){
+  padding: 0 @p;
+  background: @b;
+}

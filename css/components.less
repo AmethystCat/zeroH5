@@ -1,4 +1,4 @@
-@import "varlible";
+@import "variable";
 @charset "utf-8";
 
 //如果有header和footer，则可以设置wrap-page的padding
@@ -29,13 +29,22 @@
 .wrap-page {
   top: @h;
   bottom: @h;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   -webkit-overflow-scrolling: touch;
 }
 .page {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  /*没有footer和header,bottom和top设置为0*/
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
   padding: @pagePadding;
   margin-bottom: @pMargin;
-  height: 100%;
+  //height: 100%;
 }
 
 //----------
@@ -58,6 +67,38 @@
   border: 0;
   padding: 10px;
   border-radius: 3px;
+  font-weight: bold;
   color: #fff;
-  background: orange;
+  background: @orangeColor;
+  &--green {
+    @h: 3.7rem;
+    &:extend(.btn);
+    display: block;
+    width: 100%;
+    height: @h;
+    line-height: @h;
+    padding: 0 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    background: @btnColorGreen;
+  }
+  &--hollow-green {
+    padding: 10px 15px;
+    border: 2px solid @btnColorGreen;
+    color: @btnColorGreen;
+    background: #fff;
+  }
+}
+
+//----------
+// status info comp
+//----------
+.hint-title {
+  text-align: center;
+  color: @orangeColor;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 60px;
+  font-size: 1.8rem;
 }

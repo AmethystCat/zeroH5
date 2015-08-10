@@ -1,4 +1,14 @@
 @charset "utf-8";
+/*
+ *----------
+ * variable
+ *----------
+*/
+/*
+ *----------
+ * mixin comp
+ *----------
+*/
 .header,
 .footer,
 .wrap-page {
@@ -21,13 +31,21 @@
 .wrap-page {
   top: 0;
   bottom: 0;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   -webkit-overflow-scrolling: touch;
 }
 .page {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  /*没有footer和header,bottom和top设置为0*/
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
   padding: 0;
   margin-bottom: 0;
-  height: 100%;
 }
 .h-title {
   position: relative;
@@ -37,11 +55,38 @@
   color: #c2c2c2;
   border-bottom: 1px solid #c2c2c2;
 }
-.btn {
+.btn,
+.btn--green {
   border: 0;
   padding: 10px;
   border-radius: 3px;
+  font-weight: bold;
   color: #fff;
-  background: orange;
+  background: #fd7037;
+}
+.btn--green {
+  display: block;
+  width: 100%;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  background: #24cf5f;
+}
+.btn--hollow-green {
+  padding: 10px 15px;
+  border: 2px solid #24cf5f;
+  color: #24cf5f;
+  background: #fff;
+}
+.hint-title {
+  text-align: center;
+  color: #fd7037;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 60px;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=components.css.map */

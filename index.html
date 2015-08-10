@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/components.css"/>
     <link rel="stylesheet" href="css/page.css"/>
+    <link rel="stylesheet" href="css/animation.css"/>
 </head>
 <body>
 <header class="header"></header>
 <footer class="footer"></footer>
-<div class="wrap-page">
-    <section class="page section-activity">
+<div id="main" class="wrap-page">
+    <section class="page section-activity page-active">
         <!-- activity banner and team-info-->
         <div class="section-banner w100p">
             <div class="banner-w">
@@ -63,13 +64,86 @@
         <!-- activity sign up submit -->
         <div class="section-baoming w100p">
             <span class="baoming-price">￥<i>999.00</i></span>
-            <button class="baoming btn" id="baoming-Btn">立即报名</button>
+            <button class="baoming btn" id="baoming-Btn" data-page="p2">立即报名</button>
         </div>
     </section>
-    <section class="page hide"></section>
-    <section class="page hide"></section>
-    <section class="page hide"></section>
-    <section class="page hide"></section>
+    <!-- write baoming info-->
+    <section id="p2" class="page section-baoming-regist page-next">
+        <h3 class="hint-title">填写报名信息</h3>
+        <div class="section-form">
+            <input type="text" placeholder="手机号"/>
+            <input type="text" placeholder="密码"/>
+            <input type="text" placeholder="三围"/>
+            <input class="btn--green" id="next" data-page="p3" type="button" value="下一步"/>
+        </div>
+        <div class="section-app-des">
+            <p>
+                集合是一款活动类社交平台。1.0.5版本开放成都地区，集合每天都会
+                更新通过精心挑选的同城活动信息，并在app上展示出来帮助需要参与
+                活动的人及时了解靠谱，准确的活动内容。
+            </p>
+            <button class="ios-download">免费下载</button>
+            <button class="android-download">免费下载</button>
+        </div>
+    </section>
+    <!-- get phone captcha and submit info in this section-->
+    <section id="p3" class="page section-get-captcha page-next">
+        <h3 class="hint-title">验证手机号</h3>
+        <div class="section-captcha-validate">
+            <p>手机号码：<span class="phone-num">13800138000</span></p>
+            <input type="text" class="captcha-input" id="captcha" placeholder="输入验证码"/>
+            <input type="button" class="btn--hollow-green get-captcha" id="get-captcha" value="获取验证码"/>
+            <div class="error-mes">验证码错啦</div>
+            <input type="button" class="btn--green validate" id="submit" data-page="p5" value="验证"/>
+        </div>
+        <div class="section-app-des">
+            <p>
+                集合是一款活动类社交平台。1.0.5版本开放成都地区，集合每天都会
+                更新通过精心挑选的同城活动信息，并在app上展示出来帮助需要参与
+                活动的人及时了解靠谱，准确的活动内容。
+            </p>
+            <button class="ios-download">免费下载</button>
+            <button class="android-download">免费下载</button>
+        </div>
+    </section>
+    <!-- when the activity has baoming fee,user must download app for baoming -->
+    <section id="p4" class="page section-downApp-for-baoming hide">
+        <h3 class="hint-title">填写报名信息</h3>
+        <div class="section-captcha-validate">
+            <p class="hint-info">
+                该活动包含报名费，请下载客户端进行报名
+            </p>
+        </div>
+        <div class="section-app-des">
+            <p>
+                集合是一款活动类社交平台。1.0.5版本开放成都地区，集合每天都会
+                更新通过精心挑选的同城活动信息，并在app上展示出来帮助需要参与
+                活动的人及时了解靠谱，准确的活动内容。
+            </p>
+            <button class="ios-download">免费下载</button>
+            <button class="android-download">免费下载</button>
+        </div>
+    </section>
+    <!-- baoming succeed-->
+    <section id="p5" class="page section-succeed page-next">
+        <h3 class="hint-title">报名成功</h3>
+        <p class="hint-info">
+            <span class="hint-status">恭喜，报名成功！</span>
+            <span class="hint-des">正在报名审核中，下载app可查看报名结果</span>
+        </p>
+        <div class="section-app-des">
+            <p>
+                集合是一款活动类社交平台。1.0.5版本开放成都地区，集合每天都会
+                更新通过精心挑选的同城活动信息，并在app上展示出来帮助需要参与
+                活动的人及时了解靠谱，准确的活动内容。
+            </p>
+            <button class="ios-download">免费下载</button>
+            <button class="android-download">免费下载</button>
+        </div>
+    </section>
+
+    <script src="bower_components/zepto.js/dist/zepto.js"></script>
+    <script src="js/page.js"></script>
 </div>
 </body>
 </html>

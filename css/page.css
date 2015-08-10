@@ -1,4 +1,14 @@
 @charset "utf-8";
+/*
+ *----------
+ * variable
+ *----------
+*/
+/*
+ *----------
+ * mixin comp
+ *----------
+*/
 .hide {
   display: none;
 }
@@ -9,9 +19,15 @@
 .p10 {
   padding: 0 10px;
 }
+.tc {
+  text-align: center;
+}
 .wrap-page {
-  background-color: #b9b9b9;
+  background-color: #eef2f4;
   color: #c2c2c2;
+}
+.section-app-des {
+  font-size: 1rem;
 }
 /*activity banner and team-info*/
 .section-activity {
@@ -60,6 +76,8 @@
 .section-activity .section-ac-detail {
   margin-bottom: 15px;
   background: #ffffff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .section-activity .section-ac-detail p {
   color: #666666;
@@ -67,7 +85,7 @@
 .section-activity .section-ac-detail .ac-time {
   padding: 5px 0 0 0;
   font-size: 22px;
-  color: orange;
+  color: #fd7037;
 }
 .section-activity .section-ac-detail .ac-location {
   padding: 0 0 5px 0;
@@ -80,6 +98,8 @@
 .section-activity .section-ac-address {
   margin-bottom: 15px;
   background: #ffffff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .section-activity .section-ac-address .ac-address {
   position: relative;
@@ -100,18 +120,115 @@
 .section-activity .section-baoming {
   padding: 10px 15px;
   background: #ffffff;
+  border-top: 1px solid #ccc;
 }
 .section-activity .section-baoming .baoming-price {
   display: inline-block;
   padding-top: 5px;
   vertical-align: bottom;
   font-size: 26px;
-  color: orange;
+  color: #fd7037;
 }
 .section-activity .section-baoming .baoming-price i {
   font-style: normal;
 }
 .section-activity .section-baoming .baoming {
   float: right;
+}
+/*write baoming info*/
+.section-baoming-regist {
+  padding: 0 1.5rem;
+  background: #ffffff;
+}
+.section-baoming-regist .section-form {
+  padding-top: 2rem;
+}
+.section-baoming-regist .section-form input {
+  display: block;
+  width: 100%;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  padding: 0 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.section-baoming-regist .section-app-des {
+  padding: 0 3rem;
+  background: #ffffff;
+}
+/*get phone captcha and submit info in this section*/
+.section-get-captcha {
+  padding: 0 1.5rem;
+  background: #ffffff;
+}
+.section-get-captcha .section-captcha-validate p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333333;
+  padding: 2rem 0 2rem 0.5rem;
+}
+.section-get-captcha .section-captcha-validate input {
+  vertical-align: middle;
+}
+.section-get-captcha .section-captcha-validate .captcha-input {
+  width: 62%;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+.section-get-captcha .section-captcha-validate .get-captcha {
+  width: 36%;
+  height: 42px;
+}
+.section-get-captcha .section-captcha-validate .error-mes {
+  padding-top: 0.8rem;
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.section-get-captcha .section-captcha-validate .validate {
+  margin: 5.5rem 0 1.3rem 0;
+}
+.section-get-captcha .section-app-des {
+  padding: 0 3rem;
+  background: #ffffff;
+}
+/*when the activity has baoming fee,user must download app for baoming*/
+.section-downApp-for-baoming {
+  padding: 0 3rem;
+  background: #ffffff;
+}
+.section-downApp-for-baoming .hint-info {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333333;
+  padding: 2rem 0 15rem 0 ;
+  margin-bottom: 3.5rem;
+  background: #ffffff url("../img/appLogo.png") no-repeat center bottom;
+  background-size: 9rem 12rem;
+}
+/*baoming succeed*/
+.section-succeed {
+  padding: 0 3rem;
+  background: #ffffff;
+}
+.section-succeed .hint-info {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333333;
+  padding-bottom: 11rem;
+  margin-bottom: 3rem;
+  background: #ffffff url("../img/loading.png") no-repeat center bottom;
+  background-size: 9rem 9rem;
+}
+.section-succeed .hint-info span {
+  display: block;
+}
+.section-succeed .hint-status {
+  padding: 2rem 0;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=page.css.map */

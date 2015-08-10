@@ -2,7 +2,116 @@
 .hide {
   display: none;
 }
+.w100p {
+  width: 100%;
+  overflow: hidden;
+}
+.p10 {
+  padding: 0 10px;
+}
 .wrap-page {
-  background-color: olivedrab;
+  background-color: #b9b9b9;
+  color: #c2c2c2;
+}
+/*activity banner and team-info*/
+.section-activity {
+  /*activity detail*/
+  /*activity address*/
+  /*activity baoming*/
+}
+.section-activity .section-banner {
+  margin-bottom: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid #ccc;
+}
+.section-activity .section-banner .banner-w img {
+  width: 100%;
+}
+.section-activity .section-banner .ac-title p {
+  position: relative;
+  padding: 10px 0;
+}
+.section-activity .section-banner .ac-title .team-logo {
+  width: 54px;
+  height: 54px;
+}
+.section-activity .section-banner .ac-title .team-name {
+  display: inline-block;
+  width: 63%;
+  padding-left: 10px;
+  line-height: 54px;
+  vertical-align: bottom;
+  font-size: 2rem;
+  color: #000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section-activity .section-banner .ac-title .phone-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/phone-icon.png") no-repeat center;
+  background-size: contain;
+}
+.section-activity .section-ac-detail {
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+.section-activity .section-ac-detail p {
+  color: #666666;
+}
+.section-activity .section-ac-detail .ac-time {
+  padding: 5px 0 0 0;
+  font-size: 22px;
+  color: orange;
+}
+.section-activity .section-ac-detail .ac-location {
+  padding: 0 0 5px 0;
+  font-size: 18px;
+}
+.section-activity .section-ac-detail .ac-des {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.section-activity .section-ac-address {
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+.section-activity .section-ac-address .ac-address {
+  position: relative;
+  padding: 10px 40px 10px 0;
+  font-size: 22px;
+  color: #666666;
+}
+.section-activity .section-ac-address .local-icon {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+  background: url("../img/local-icon.png") no-repeat center;
+  background-size: contain;
+}
+.section-activity .section-baoming {
+  padding: 10px 15px;
+  background: #ffffff;
+}
+.section-activity .section-baoming .baoming-price {
+  display: inline-block;
+  padding-top: 5px;
+  vertical-align: bottom;
+  font-size: 26px;
+  color: orange;
+}
+.section-activity .section-baoming .baoming-price i {
+  font-style: normal;
+}
+.section-activity .section-baoming .baoming {
+  float: right;
 }
 /*# sourceMappingURL=page.css.map */

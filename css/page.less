@@ -3,7 +3,7 @@
 //------------------util style
 .hide {display: none;}
 .w100p{width: 100%;overflow: hidden;}
-.p10 {padding: 0 10px;}
+.p10 {padding: 0 1.5rem;}
 
 .tc {text-align: center;}
 //------------------page style
@@ -14,7 +14,26 @@
 .section-app-des {
   font-size: 1rem;
 }
-/*activity banner and team-info*/
+
+.ios-download,
+.android-download {
+  display: inline-block;
+  width: 48%;
+  height: 4.5rem;
+  margin-top: 1rem;
+  text-indent: -999px;
+}
+.ios-download {
+  background: url("../img/ios.png") no-repeat center;
+  background-size: contain;
+}
+.android-download {
+  float: right;
+  background: url("../img/android.png") no-repeat center;
+  background-size: contain;
+}
+
+//activity banner and team-info
 .section-activity {
   @defaultWidth: 100%;
   @logoWH: 54px;
@@ -58,7 +77,7 @@
       }
     }
   }
-  /*activity detail*/
+  //activity detail
   .section-ac-detail {
     @fc: #666;
     .marginPanel();
@@ -81,7 +100,7 @@
       letter-spacing: 1px;
     }
   }
-  /*activity address*/
+  //activity address
   .section-ac-address {
     @fc: #666;
     .marginPanel();
@@ -105,7 +124,7 @@
       background-size: contain;
     }
   }
-  /*activity baoming*/
+  //activity baoming
   .section-baoming {
     padding: 10px 15px;
     background: @bgColor;
@@ -141,7 +160,7 @@
     }
   }
   .section-app-des {
-    .padbg();
+    .padbg(2.5rem);
   }
 }
 /*get phone captcha and submit info in this section*/
@@ -181,7 +200,7 @@
     }
   }
   .section-app-des {
-    .padbg();
+    .padbg(2.5rem);
   }
 }
 /*when the activity has baoming fee,user must download app for baoming*/

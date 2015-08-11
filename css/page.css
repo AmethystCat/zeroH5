@@ -1,14 +1,4 @@
 @charset "utf-8";
-/*
- *----------
- * variable
- *----------
-*/
-/*
- *----------
- * mixin comp
- *----------
-*/
 .hide {
   display: none;
 }
@@ -17,7 +7,7 @@
   overflow: hidden;
 }
 .p10 {
-  padding: 0 10px;
+  padding: 0 1.5rem;
 }
 .tc {
   text-align: center;
@@ -29,11 +19,22 @@
 .section-app-des {
   font-size: 1rem;
 }
-/*activity banner and team-info*/
-.section-activity {
-  /*activity detail*/
-  /*activity address*/
-  /*activity baoming*/
+.ios-download,
+.android-download {
+  display: inline-block;
+  width: 48%;
+  height: 4.5rem;
+  margin-top: 1rem;
+  text-indent: -999px;
+}
+.ios-download {
+  background: url("../img/ios.png") no-repeat center;
+  background-size: contain;
+}
+.android-download {
+  float: right;
+  background: url("../img/android.png") no-repeat center;
+  background-size: contain;
 }
 .section-activity .section-banner {
   margin-bottom: 15px;
@@ -152,7 +153,7 @@
   margin-bottom: 1.5rem;
 }
 .section-baoming-regist .section-app-des {
-  padding: 0 3rem;
+  padding: 0 2.5rem;
   background: #ffffff;
 }
 /*get phone captcha and submit info in this section*/
@@ -191,12 +192,12 @@
   margin: 5.5rem 0 1.3rem 0;
 }
 .section-get-captcha .section-app-des {
-  padding: 0 3rem;
+  padding: 0 2.5rem;
   background: #ffffff;
 }
 /*when the activity has baoming fee,user must download app for baoming*/
 .section-downApp-for-baoming {
-  padding: 0 3rem;
+  padding: 0 4rem;
   background: #ffffff;
 }
 .section-downApp-for-baoming .hint-info {
@@ -211,7 +212,7 @@
 }
 /*baoming succeed*/
 .section-succeed {
-  padding: 0 3rem;
+  padding: 0 4rem;
   background: #ffffff;
 }
 .section-succeed .hint-info {
